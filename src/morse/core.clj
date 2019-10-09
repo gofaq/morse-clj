@@ -73,3 +73,12 @@
   [type phrase]
   (get-characters type (str/split phrase #" ")))
 
+;(defn- convert-characters [type characters]
+;  (chars-join type (map (comp (current-alphabet type) str) characters)))
+;
+;(defn- phrase->chars [type phrase]
+;  (cond->> (str/split phrase #" ")
+;    (= type :alpha) (str/join "")))
+;
+;(defn convert [type phrase]
+;  (convert-characters type (phrase->chars type phrase)))
