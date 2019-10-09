@@ -16,7 +16,7 @@
            (is (= (get-single-character (current-alphabet :morse) ".----") "1")))
 
   (testing "Testing convert morse to alphabet"
-           (is (=  "sos"))
+           (is (= (convert :morse "... --- ...") "sos"))
            (is (= (convert :morse "-.. .- - -- .- -.") "batman"))
            (is (= (convert :morse ".- .-. . .- ..... .----") "area51")))
 
